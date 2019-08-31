@@ -1,14 +1,40 @@
+
+$dark: #131313    
+
 body
     font-size: 18px
     margin: 0
     font-family: 'Roboto', sans-serif
     font-weight: 400
 
+.container
+    width: 1438px
+    max-width: 1438px
+
 .header
-    background-color: #131313
-    padding: 37px
+    // display: flex;
+    // align-items: center;
+    background-color: $dark
+    padding: 24px 0
+    height: 83px
+    min-height: 83px
+    .row
+        display: flex
+        justify-content: space-between
+        align-items: center
     &_nav
-        color: #fff
-        font-size: .7rem
+        display: flex
         &-links
             margin-right: 47px
+            font-size: .7rem
+            color: #fff
+            text-decoration: none
+    &_phone
+        color: #E3B873
+        font-size: .7rem
+        display: inline-block
+
+.hero
+    min-height: 707px
+    &_content
+        background: $dark url(../img/img-hero.jpg) center no-repeat / cover
