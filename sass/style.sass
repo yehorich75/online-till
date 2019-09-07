@@ -1,5 +1,5 @@
 
-$dark: #131313    
+$dark: #131313
 
 body
     font-size: 18px
@@ -26,15 +26,36 @@ body
         display: flex
         &-links
             margin-right: 47px
-            font-size: .7rem
+            font-size: .8rem
             color: #fff
             text-decoration: none
+            letter-spacing: 1px
     &_phone
         color: #E3B873
-        font-size: .7rem
+        font-size: .8rem
         display: inline-block
 
+.btn
+    background-color: #E3B873
+    color: #ffffff
+    text-transform: uppercase
+    font-size: .8rem
+    padding: 13px 33px
+    border: none
+    outline: none
+    border-radius: 2px
+
 .hero
+    display: flex
     min-height: 707px
+    &_insta
+        display: block
+        width: 5vw
     &_content
         background: $dark url(../img/img-hero.jpg) center no-repeat / cover
+        height: 90vh
+        width: 95vw
+        &-title
+            font-family: 'Yeseva One', cursive
+            font-size: 2.2rem
+            color: #ffffff
