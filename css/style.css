@@ -6,8 +6,8 @@ body {
 }
 
 .container {
-  width: 1438px;
-  max-width: 1438px;
+  width: 1440px;
+  max-width: 1440px;
 }
 
 .header {
@@ -68,8 +68,24 @@ body {
 }
 
 .hero_insta {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 95vh;
   width: 5vw;
+  background-color: #131313;
+}
+
+.hero_insta-link {
+  display: block;
+  color: #E3B873;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .hero_content {
@@ -78,9 +94,34 @@ body {
   width: 95vw;
 }
 
+.hero_content-inner {
+  margin: 194px 0 0 60px;
+}
+
 .hero_content-title {
   font-family: 'Yeseva One', cursive;
   font-size: 2.2rem;
   color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.hero_content-text {
+  margin-bottom: 41px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+.hero_btn-accent {
+  padding: 20px 42px;
+  border: 1px solid #E3B873;
+  cursor: pointer;
+}
+
+.hero_btn-ghost {
+  padding: 20px 42px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

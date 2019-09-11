@@ -1,5 +1,7 @@
 
-$dark: #131313
+$color-dark: #131313
+$color-accent: #E3B873
+$color-white: #ffffff
 
 body
     font-size: 18px
@@ -8,13 +10,13 @@ body
     font-weight: 400
 
 .container
-    width: 1438px
-    max-width: 1438px
+    width: 1440px
+    max-width: 1440px
 
 .header
     // display: flex;
     // align-items: center;
-    background-color: $dark
+    background-color: $color-dark
     padding: 24px 0
     height: 83px
     min-height: 83px
@@ -27,17 +29,17 @@ body
         &-links
             margin-right: 47px
             font-size: .8rem
-            color: #fff
+            color: $color-white
             text-decoration: none
             letter-spacing: 1px
     &_phone
-        color: #E3B873
+        color: $color-accent
         font-size: .8rem
         display: inline-block
 
 .btn
-    background-color: #E3B873
-    color: #ffffff
+    background-color: $color-accent
+    color: $color-white
     text-transform: uppercase
     font-size: .8rem
     padding: 13px 33px
@@ -49,13 +51,40 @@ body
     display: flex
     min-height: 707px
     &_insta
-        display: block
+        display: flex
+        align-items: center
+        height: 95vh
         width: 5vw
+        background-color: $color-dark
+        &-link
+            display: block
+            color: $color-accent
+            text-decoration: none
+            text-transform: uppercase
+            transform: rotate(90deg)
     &_content
         background: $dark url(../img/img-hero.jpg) center no-repeat / cover
         height: 90vh
         width: 95vw
+        &-inner
+            margin: 194px 0 0 60px
         &-title
             font-family: 'Yeseva One', cursive
             font-size: 2.2rem
-            color: #ffffff
+            color: $color-white
+            margin-bottom: 20px
+        &-text
+            margin-bottom: 41px
+            color: $color-white
+            font-size: 1.5rem
+            line-height: 1.8rem
+    &_btn
+        &-accent
+            padding: 20px 42px
+            border: 1px solid $color-accent
+            cursor: pointer
+        &-ghost
+            padding: 20px 42px
+            background-color: transparent
+            border: 1px solid $color-white
+            cursor: pointer
