@@ -49,10 +49,13 @@ body {
 }
 
 .hero {
-  min-height: 707px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .hero_content {
+  min-height: 707px;
   background: #131313 url(../img/img-hero.jpg) center no-repeat/cover;
 }
 /*# sourceMappingURL=style.css.map */
