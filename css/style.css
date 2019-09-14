@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-size: 18px;
   margin: 0;
@@ -38,7 +45,7 @@ body {
 .header_nav-links {
   margin-right: 47px;
   font-size: .8rem;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   letter-spacing: 1px;
 }
@@ -74,6 +81,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 95vh;
   width: 5vw;
   background-color: #131313;
@@ -90,7 +100,7 @@ body {
 
 .hero_content {
   background: #131313 url(../img/img-hero.jpg) center no-repeat/cover;
-  height: 90vh;
+  height: 92vh;
   width: 95vw;
 }
 
@@ -100,16 +110,21 @@ body {
 
 .hero_content-title {
   font-family: 'Yeseva One', cursive;
-  font-size: 2.2rem;
+  font-size: 2.7rem;
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+.hero_content-title span {
+  color: #E3B873;
 }
 
 .hero_content-text {
   margin-bottom: 41px;
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.8rem;
+  font-weight: 300;
 }
 
 .hero_btn-accent {

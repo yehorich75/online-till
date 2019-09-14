@@ -3,6 +3,11 @@ $color-dark: #131313
 $color-accent: #E3B873
 $color-white: #ffffff
 
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
 body
     font-size: 18px
     margin: 0
@@ -53,6 +58,7 @@ body
     &_insta
         display: flex
         align-items: center
+        justify-content: center
         height: 95vh
         width: 5vw
         background-color: $color-dark
@@ -63,21 +69,24 @@ body
             text-transform: uppercase
             transform: rotate(90deg)
     &_content
-        background: $dark url(../img/img-hero.jpg) center no-repeat / cover
-        height: 90vh
+        background: $color-dark url(../img/img-hero.jpg) center no-repeat / cover
+        height: 92vh
         width: 95vw
         &-inner
             margin: 194px 0 0 60px
         &-title
             font-family: 'Yeseva One', cursive
-            font-size: 2.2rem
+            font-size: 2.7rem
             color: $color-white
             margin-bottom: 20px
+            span
+                color: $color-accent
         &-text
             margin-bottom: 41px
             color: $color-white
-            font-size: 1.5rem
+            font-size: 1.3rem
             line-height: 1.8rem
+            font-weight: 300
     &_btn
         &-accent
             padding: 20px 42px
