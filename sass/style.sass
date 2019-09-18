@@ -1,6 +1,7 @@
 
 $color-dark: #131313
 $color-accent: #E3B873
+$color-accent-hover: #e6ae53
 $color-white: #ffffff
 
 *
@@ -11,8 +12,9 @@ $color-white: #ffffff
 body
     font-size: 18px
     margin: 0
-    font-family: 'Roboto', sans-serif
+    font-family: 'Josefin Sans', sans-serif
     font-weight: 400
+    background-color: $color-dark
 
 .container
     width: 1440px
@@ -25,6 +27,8 @@ body
     padding: 24px 0
     height: 83px
     min-height: 83px
+    width: 100%
+    position: fixed
     .row
         display: flex
         justify-content: space-between
@@ -36,30 +40,35 @@ body
             font-size: .8rem
             color: $color-white
             text-decoration: none
-            letter-spacing: 1px
     &_phone
         color: $color-accent
         font-size: .8rem
         display: inline-block
+        border-bottom: 1px solid
+        text-decoration: none
 
 .btn
     background-color: $color-accent
     color: $color-white
     text-transform: uppercase
+    font-family: 'Josefin Sans', sans-serif
     font-size: .8rem
     padding: 13px 33px
     border: none
     outline: none
     border-radius: 2px
+    cursor: pointer
 
 .hero
     display: flex
     min-height: 707px
     &_insta
         display: flex
-        align-items: center
+        flex-direction: column
         justify-content: center
-        height: 95vh
+        align-items: center
+        height: 100vh
+        min-height: 100vh
         width: 5vw
         background-color: $color-dark
         &-link
@@ -68,15 +77,25 @@ body
             text-decoration: none
             text-transform: uppercase
             transform: rotate(90deg)
+            width: 175px
+        &-line
+            background-color: $color-accent
+            height: 1px
+            width: 50px
+            transform: rotate(90deg)
+            margin-top: 50px
+            margin-left: 3px
     &_content
+        min-height: 707px
         background: $color-dark url(../img/img-hero.jpg) center no-repeat / cover
-        height: 92vh
+        height: 100vh
+        min-height: 100vh
         width: 95vw
         &-inner
             margin: 194px 0 0 60px
         &-title
             font-family: 'Yeseva One', cursive
-            font-size: 2.7rem
+            font-size: 2.5rem
             color: $color-white
             margin-bottom: 20px
             span
@@ -84,16 +103,39 @@ body
         &-text
             margin-bottom: 41px
             color: $color-white
-            font-size: 1.3rem
-            line-height: 1.8rem
+            font-size: 1.2rem
             font-weight: 300
+            line-height: 1.7rem
     &_btn
         &-accent
             padding: 20px 42px
             border: 1px solid $color-accent
-            cursor: pointer
+            &:hover
+                background-color: $color-accent-hover
         &-ghost
             padding: 20px 42px
             background-color: transparent
             border: 1px solid $color-white
             cursor: pointer
+.scroll-down
+    position: fixed
+    left: 0
+    bottom: 0
+    background-color: $color-dark
+    padding: 34px 48px
+    color: $color-white
+    border: 0
+    text-transform: uppercase
+    font-size: 0.9rem
+    font-family: 'Yeseva One', cursive
+    cursor: pointer
+    display: flex
+    align-items: center
+    &:after
+        display: block
+        content: ''
+        background-image: url(../img/scroll-down.svg)
+        background-size: 29px
+        width: 29px
+        height: 29px
+        margin-left: 12px
