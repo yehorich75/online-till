@@ -197,4 +197,16 @@ body {
   height: 29px;
   margin-left: 12px;
 }
+
+.completed_info-title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.8rem;
+  color: #E3B873;
+}
+
+.completed_info-text {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 300;
+}
 /*# sourceMappingURL=style.css.map */
