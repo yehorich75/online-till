@@ -186,6 +186,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 10;
 }
 
 .scroll-down:after {
@@ -198,6 +199,19 @@ body {
   margin-left: 12px;
 }
 
+.completed .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.completed_info {
+  padding: 100px;
+}
+
 .completed_info-title {
   font-family: 'Yeseva One', cursive;
   font-size: 1.8rem;
@@ -208,6 +222,14 @@ body {
   color: #ffffff;
   font-size: 1rem;
   font-weight: 300;
+}
+
+.carousel-item {
+  width: 679px;
+}
+
+.carousel-indicators {
+  position: relative;
 }
 
 .carousel-indicators li {
