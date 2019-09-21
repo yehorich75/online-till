@@ -146,10 +146,28 @@ body
     &_info
         padding: 100px
         &-title
-           font-family: 'Yeseva One', cursive
-           font-size: 1.8rem
-           color: $color-accent 
+            font-family: 'Yeseva One', cursive
+            font-size: 1.8rem
+            color: $color-accent
         &-text
             color: $color-white
             font-size: 1rem
             font-weight: 300
+
+.carousel
+    &-indicators
+        li
+            font-family: 'Yeseva One', cursive
+            color: #5a5a5a
+            font-size: 1rem
+            text-transform: uppercase
+            margin: 0 60px 0 0
+
+            width: auto
+            height: auto
+            text-indent: 0
+            background-color: transparent
+            border: 0
+            opacity: 1
+        .active
+            color: $color-accent
