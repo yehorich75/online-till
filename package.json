@@ -1,0 +1,23 @@
+{
+  "name": "online-till",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yehorich75/online-till.git"
+  },
+  "author": "Yegorich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yehorich75/online-till/issues"
+  },
+  "homepage": "https://github.com/yehorich75/online-till#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1"
+  }
+}

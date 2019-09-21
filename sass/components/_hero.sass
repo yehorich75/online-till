@@ -1,0 +1,82 @@
+.hero
+    display: flex
+    min-height: 707px
+    margin-bottom: 60px
+    &_insta
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: 100vh
+        min-height: 100vh
+        width: 5vw
+        background-color: $color-dark
+        &-link
+            display: block
+            color: $color-accent
+            text-decoration: none
+            text-transform: uppercase
+            transform: rotate(90deg)
+            width: 175px
+        &-line
+            background-color: $color-accent
+            height: 1px
+            width: 50px
+            transform: rotate(90deg)
+            margin-top: 50px
+            margin-left: 3px
+    &_content
+        min-height: 707px
+        background: $color-dark url(../img/img-hero.jpg) center no-repeat / cover
+        height: 100vh
+        min-height: 100vh
+        width: 95vw
+        &-inner
+            margin: 194px 0 0 60px
+        &-title
+            font-family: 'Yeseva One', cursive
+            font-size: 2.5rem
+            color: $color-white
+            margin-bottom: 20px
+            span
+                color: $color-accent
+        &-text
+            margin-bottom: 41px
+            color: $color-white
+            font-size: 1.2rem
+            font-weight: 300
+            line-height: 1.7rem
+    &_btn
+        &-accent
+            padding: 20px 42px
+            border: 1px solid $color-accent
+            &:hover
+                background-color: $color-accent-hover
+        &-ghost
+            padding: 20px 42px
+            background-color: transparent
+            border: 1px solid $color-white
+            cursor: pointer
+.scroll-down
+    position: fixed
+    left: 0
+    bottom: 0
+    background-color: $color-dark
+    padding: 34px 48px
+    color: $color-white
+    border: 0
+    text-transform: uppercase
+    font-size: 0.9rem
+    font-family: 'Yeseva One', cursive
+    cursor: pointer
+    display: flex
+    align-items: center
+    z-index: 10
+    &:after
+        display: block
+        content: ''
+        background-image: url(../img/scroll-down.svg)
+        background-size: 29px
+        width: 29px
+        height: 29px
+        margin-left: 12px
