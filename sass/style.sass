@@ -1,8 +1,4 @@
-
-$color-dark: #131313
-$color-accent: #E3B873
-$color-accent-hover: #e6ae53
-$color-white: #ffffff
+@import 'components/vars'
 
 *
     margin: 0
@@ -20,33 +16,7 @@ body
     width: 1440px
     max-width: 1440px
 
-.header
-    // display: flex;
-    // align-items: center;
-    background-color: $color-dark
-    padding: 24px 0
-    height: 83px
-    min-height: 83px
-    width: 100%
-    position: fixed
-    z-index: 10
-    .row
-        display: flex
-        justify-content: space-between
-        align-items: center
-    &_nav
-        display: flex
-        &-links
-            margin-right: 47px
-            font-size: .8rem
-            color: $color-white
-            text-decoration: none
-    &_phone
-        color: $color-accent
-        font-size: .8rem
-        display: inline-block
-        border-bottom: 1px solid
-        text-decoration: none
+@import 'components/header'
 
 .btn
     background-color: $color-accent
@@ -60,120 +30,8 @@ body
     border-radius: 2px
     cursor: pointer
 
-.hero
-    display: flex
-    min-height: 707px
-    &_insta
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-        height: 100vh
-        min-height: 100vh
-        width: 5vw
-        background-color: $color-dark
-        &-link
-            display: block
-            color: $color-accent
-            text-decoration: none
-            text-transform: uppercase
-            transform: rotate(90deg)
-            width: 175px
-        &-line
-            background-color: $color-accent
-            height: 1px
-            width: 50px
-            transform: rotate(90deg)
-            margin-top: 50px
-            margin-left: 3px
-    &_content
-        min-height: 707px
-        background: $color-dark url(../img/img-hero.jpg) center no-repeat / cover
-        height: 100vh
-        min-height: 100vh
-        width: 95vw
-        &-inner
-            margin: 194px 0 0 60px
-        &-title
-            font-family: 'Yeseva One', cursive
-            font-size: 2.5rem
-            color: $color-white
-            margin-bottom: 20px
-            span
-                color: $color-accent
-        &-text
-            margin-bottom: 41px
-            color: $color-white
-            font-size: 1.2rem
-            font-weight: 300
-            line-height: 1.7rem
-    &_btn
-        &-accent
-            padding: 20px 42px
-            border: 1px solid $color-accent
-            &:hover
-                background-color: $color-accent-hover
-        &-ghost
-            padding: 20px 42px
-            background-color: transparent
-            border: 1px solid $color-white
-            cursor: pointer
-.scroll-down
-    position: fixed
-    left: 0
-    bottom: 0
-    background-color: $color-dark
-    padding: 34px 48px
-    color: $color-white
-    border: 0
-    text-transform: uppercase
-    font-size: 0.9rem
-    font-family: 'Yeseva One', cursive
-    cursor: pointer
-    display: flex
-    align-items: center
-    z-index: 10
-    &:after
-        display: block
-        content: ''
-        background-image: url(../img/scroll-down.svg)
-        background-size: 29px
-        width: 29px
-        height: 29px
-        margin-left: 12px
+@import 'components/hero'
 
-.completed
-    .row
-        display: flex
-        justify-content: space-between
-    &_info
-        padding: 100px
-        &-title
-            font-family: 'Yeseva One', cursive
-            font-size: 1.8rem
-            color: $color-accent
-        &-text
-            color: $color-white
-            font-size: 1rem
-            font-weight: 300
+@import 'components/completed'
 
-.carousel
-    &-item
-        width: 679px
-    &-indicators
-        position: relative
-        li
-            font-family: 'Yeseva One', cursive
-            color: #5a5a5a
-            font-size: 1rem
-            text-transform: uppercase
-            margin: 0 60px 0 0
-
-            width: auto
-            height: auto
-            text-indent: 0
-            background-color: transparent
-            border: 0
-            opacity: 1
-        .active
-            color: $color-accent
+@import 'components/carousel'
