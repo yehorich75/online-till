@@ -25,7 +25,7 @@ body {
   min-height: 83px;
   width: 100%;
   position: fixed;
-  z-index: 10;
+  z-index: 20;
 }
 
 .header .row {
@@ -200,6 +200,10 @@ body {
   margin-left: 12px;
 }
 
+.completed {
+  margin-bottom: 90px;
+}
+
 .completed .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,6 +241,7 @@ body {
 .completed_desc-item {
   color: #ffffff;
   font-size: .8rem;
+  font-weight: 300;
   width: 50%;
   margin-bottom: 34px;
 }
@@ -272,5 +277,50 @@ body {
 
 .carousel-indicators .active {
   color: #E3B873;
+}
+
+.carousel-control-next {
+  opacity: 1;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../img/projects-slider/slider-arrow.svg);
+  width: 55px;
+  height: 55px;
+}
+
+.carousel-control-prev {
+  opacity: 1;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../img/projects-slider/slider-arrow.svg);
+  width: 55px;
+  height: 55px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.control_title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.control_title-icon {
+  margin: 0 auto;
+  display: block;
+}
+
+.control_title-icon:before {
+  content: "";
+  display: block;
+  background-color: #E3B873;
+  height: 1px;
+  width: 50px;
 }
 /*# sourceMappingURL=style.css.map */
