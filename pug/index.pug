@@ -7,7 +7,6 @@ html
         link(rel="stylesheet", href="css/style.css")
         title Online Till
     body
-        h1 My site
         header.header
             .container
                 .row
@@ -24,6 +23,16 @@ html
                             +nav-links('#','Team','Team')
                             +nav-links('#','Reviews','Reviews')
                             +nav-links('#','Contacts','Contacts')
+                    <!-- /.col -->
+                    .col
+                        a.header_phone(href="tel:+79287683239") +7 (928) 768-32-39
+                    <!-- /.col -->
+                    .col
+                        button.header_btn.btn Request a call
+                    <!-- /.col -->
+                <!-- /.row -->
+        include hero.pug
+        include completed.pug
 
         script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js')

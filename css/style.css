@@ -51,6 +51,7 @@ body {
   font-size: .8rem;
   color: #ffffff;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .header_phone {

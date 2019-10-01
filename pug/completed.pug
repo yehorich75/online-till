@@ -1,0 +1,37 @@
+section.completed
+    .row
+        .completed_info.col-4
+            h2.completed_info-title Completed projects
+            p.completed_info-text Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families
+            .completed_desc
+                .completed_desc-item
+                    h3 City:
+                    | Rostov-on-Don LCD admiral
+                .completed_desc-item
+                    h3 Apartment area:
+                    | 81 m2
+                .completed_desc-item
+                    h3 Repair time:
+                    | 3.5 months
+                .completed_desc-item
+                    h3 Repair Cost:
+                    | Upon request
+        .completed_slider.col-8
+            #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+                ol.carousel-indicators
+                    li.active(data-target="#carouselExampleIndicators" data-slide-to="0") Rostov-on-Don, Admiral
+                    li(data-target="#carouselExampleIndicators" data-slide-to="1") Sochi Thieves
+                    li(data-target="#carouselExampleIndicators" data-slide-to="2") Rostov-on-Don Patriotic
+                .carousel-inner
+                    .carousel-item.active
+                        img.d-block.w-100(src="img/projects-slider/gallery-img-1.jpg" alt="Первый слайд")
+                    .carousel-item
+                        img.d-block.w-100(src="img/projects-slider/gallery-img-2.jpg" alt="Второй слайд")
+                    .carousel-item
+                         img.d-block.w-100(src="img/projects-slider/gallery-img-1.jpg" alt="Третий слайд")
+                .carousel-control-prev(href="#carouselExampleIndicators" role="button" data-slide="prev")
+                    span.carousel-control-prev-icon(aria-hidden="true")
+                    span.sr-only Previous
+                .carousel-control-next(href="#carouselExampleIndicators" role="button" data-slide="next")
+                    span.carousel-control-next-icon(aria-hidden="true")
+                    span.sr-only Next   
