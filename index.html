@@ -1,337 +1,89 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-size: 18px;
-  margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
-  background-color: #131313;
-}
-
-.container {
-  width: 1440px;
-  max-width: 1440px;
-}
-
-.header {
-  background-color: #131313;
-  padding: 24px 0;
-  height: 83px;
-  min-height: 83px;
-  width: 100%;
-  position: fixed;
-  z-index: 20;
-}
-
-.header .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header_nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header_nav-links {
-  margin-right: 47px;
-  font-size: .8rem;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.header_phone {
-  color: #E3B873;
-  font-size: .8rem;
-  display: inline-block;
-  border-bottom: 1px solid;
-  text-decoration: none;
-}
-
-.btn {
-  background-color: #E3B873;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: .8rem;
-  padding: 13px 33px;
-  border: none;
-  outline: none;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-.hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 707px;
-  margin-bottom: 60px;
-}
-
-.hero_insta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
-  min-height: 100vh;
-  width: 5vw;
-  background-color: #131313;
-}
-
-.hero_insta-link {
-  display: block;
-  color: #E3B873;
-  text-decoration: none;
-  text-transform: uppercase;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  width: 175px;
-}
-
-.hero_insta-line {
-  background-color: #E3B873;
-  height: 1px;
-  width: 50px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  margin-top: 50px;
-  margin-left: 3px;
-}
-
-.hero_content {
-  min-height: 707px;
-  background: #131313 url(../img/img-hero.jpg) center no-repeat/cover;
-  height: 100vh;
-  min-height: 100vh;
-  width: 95vw;
-}
-
-.hero_content-inner {
-  margin: 194px 0 0 60px;
-}
-
-.hero_content-title {
-  font-family: 'Yeseva One', cursive;
-  font-size: 2.5rem;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-.hero_content-title span {
-  color: #E3B873;
-}
-
-.hero_content-text {
-  margin-bottom: 41px;
-  color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: 300;
-  line-height: 1.7rem;
-}
-
-.hero_btn-accent {
-  padding: 20px 42px;
-  border: 1px solid #E3B873;
-}
-
-.hero_btn-accent:hover {
-  background-color: #e6ae53;
-}
-
-.hero_btn-ghost {
-  padding: 20px 42px;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  cursor: pointer;
-}
-
-.scroll-down {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  background-color: #131313;
-  padding: 34px 48px;
-  color: #ffffff;
-  border: 0;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  font-family: 'Yeseva One', cursive;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 10;
-}
-
-.scroll-down:after {
-  display: block;
-  content: '';
-  background-image: url(../img/scroll-down.svg);
-  background-size: 29px;
-  width: 29px;
-  height: 29px;
-  margin-left: 12px;
-}
-
-.completed {
-  margin-bottom: 90px;
-}
-
-.completed .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.completed_info {
-  padding: 100px;
-}
-
-.completed_info-title {
-  font-family: 'Yeseva One', cursive;
-  font-size: 1.8rem;
-  color: #E3B873;
-}
-
-.completed_info-text {
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: 300;
-  margin-bottom: 42px;
-}
-
-.completed_desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.completed_desc-item {
-  color: #ffffff;
-  font-size: .8rem;
-  font-weight: 300;
-  width: 50%;
-  margin-bottom: 34px;
-}
-
-.completed_desc h3 {
-  font-family: 'Yeseva One', cursive;
-  font-size: 1rem;
-  color: #E3B873;
-  text-transform: uppercase;
-}
-
-.carousel-item {
-  width: 679px;
-}
-
-.carousel-indicators {
-  position: relative;
-}
-
-.carousel-indicators li {
-  font-family: 'Yeseva One', cursive;
-  color: #5a5a5a;
-  font-size: 1rem;
-  text-transform: uppercase;
-  margin: 0 60px 0 0;
-  width: auto;
-  height: auto;
-  text-indent: 0;
-  background-color: transparent;
-  border: 0;
-  opacity: 1;
-}
-
-.carousel-indicators .active {
-  color: #E3B873;
-}
-
-.carousel-control-next {
-  opacity: 1;
-}
-
-.carousel-control-next-icon {
-  background-image: url(../img/projects-slider/slider-arrow.svg);
-  width: 55px;
-  height: 55px;
-}
-
-.carousel-control-prev {
-  opacity: 1;
-}
-
-.carousel-control-prev-icon {
-  background-image: url(../img/projects-slider/slider-arrow.svg);
-  width: 55px;
-  height: 55px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.control_title {
-  font-family: 'Yeseva One', cursive;
-  font-size: 1.1rem;
-  color: #ffffff;
-  text-transform: uppercase;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-}
-
-.control_title-icon {
-  margin: 0 auto;
-  display: block;
-}
-
-.control_title-icon:before {
-  content: "";
-  display: block;
-  background-color: #E3B873;
-  height: 1px;
-  width: 50px;
-}
-/*# sourceMappingURL=style.css.map */
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yeseva+One&amp;display=swap&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Online Till</title>
   </head>
   <body>
-    <h1>My Site</h1>
-    <p>Welcome to my super lame site.</p>
-    <script>// $('.carousel').carousel()</script>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col"><img class="logo" src="img/logo.svg" alt="Digital Services Center"></div><!-- /.col -->
+          <div class="col">
+            <nav class="header_nav"><a class="header_nav-links" href="#" alt="Home">Home</a><a class="header_nav-links" href="#" alt="Projects">Projects</a><a class="header_nav-links" href="#" alt="Measurement">Measurement</a><a class="header_nav-links" href="#" alt="Team">Team</a><a class="header_nav-links" href="#" alt="Reviews">Reviews</a><a class="header_nav-links" href="#" alt="Contacts">Contacts</a>
+            </nav>
+          </div><!-- /.col -->
+          <div class="col"><a class="header_phone" href="tel:+79287683239">+7 (928) 768-32-39</a></div><!-- /.col -->
+          <div class="col">
+            <button class="header_btn btn">Request a call</button>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div>
+    </header>
+    <div class="hero">
+      <div class="row">
+        <div class="hero_insta"><a class="hero_insta-link" href="#" alt="Instagram">Instagram</a>
+          <div class="hero_insta-line"></div>
+        </div>
+        <div class="hero_content">
+          <div class="hero_content-inner col-6">
+            <h1 class="hero_content-title">Turnkey Repair in the city of <br><span>Rostov-on-Don</span></h1>
+            <div class="hero_content-text">Get ready-made turnkey repairs on time <br>with work time saving up to 45 days and 20% from<br> cost of materials due to the organization of work</div>
+            <div class="hero_content-btn">
+              <button class="btn hero_btn-accent">Calculate the cost</button>
+              <button class="btn hero_btn-ghost ml-3">Submit your application</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="completed">
+      <div class="row">
+        <div class="completed_info col-4">
+          <h2 class="completed_info-title">Completed projects</h2>
+          <p class="completed_info-text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+          <div class="completed_desc">
+            <div class="completed_desc-item">
+              <h3>City:</h3>Rostov-on-Don LCD admiral
+            </div>
+            <div class="completed_desc-item">
+              <h3>Apartment area:</h3>81 m2
+            </div>
+            <div class="completed_desc-item">
+              <h3>Repair time:</h3>3.5 months
+            </div>
+            <div class="completed_desc-item">
+              <h3>Repair Cost:</h3>Upon request
+            </div>
+          </div>
+        </div>
+        <div class="completed_slider col-8">
+          <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0">Rostov-on-Don, Admiral</li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1">Sochi Thieves</li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2">Rostov-on-Don Patriotic</li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active"><img class="d-block w-100" src="img/projects-slider/gallery-img-1.jpg" alt="Первый слайд"></div>
+              <div class="carousel-item"><img class="d-block w-100" src="img/projects-slider/gallery-img-2.jpg" alt="Второй слайд"></div>
+              <div class="carousel-item"><img class="d-block w-100" src="img/projects-slider/gallery-img-1.jpg" alt="Третий слайд"></div>
+            </div>
+            <div class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></div>
+            <div class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next   </span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="control">
+      <h2 class="control_title">Online control</h2>
+      <div class="control_title-icon"><img src="img/control-title-icon.svg" alt="Control Icon"></div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </body>
 </html>

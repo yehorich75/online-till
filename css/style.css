@@ -312,11 +312,26 @@ body {
 }
 
 .control_title-icon {
-  margin: 0 auto;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .control_title-icon:before {
+  content: "";
+  display: block;
+  background-color: #E3B873;
+  height: 1px;
+  width: 50px;
+}
+
+.control_title-icon:after {
   content: "";
   display: block;
   background-color: #E3B873;

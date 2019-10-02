@@ -1,7 +1,6 @@
 {
   "name": "online-till",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,5 +19,6 @@
     "gulp": "^4.0.2",
     "gulp-pug": "^4.0.1",
     "gulp-rename": "^1.4.0"
-  }
+  },
+  "description": ""
 }
