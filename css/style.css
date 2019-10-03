@@ -51,6 +51,7 @@ body {
   font-size: .8rem;
   color: #ffffff;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .header_phone {
@@ -125,8 +126,6 @@ body {
 .hero_content {
   min-height: 707px;
   background: #131313 url(../img/img-hero.jpg) center no-repeat/cover;
-  height: 100vh;
-  min-height: 100vh;
   width: 95vw;
 }
 
