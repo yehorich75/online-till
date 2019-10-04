@@ -81,6 +81,12 @@ body {
   display: flex;
   min-height: 707px;
   margin-bottom: 60px;
+  background: #131313 url(../img/img-hero.jpg) center no-repeat/cover;
+}
+
+.hero .row {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .hero_insta {
@@ -125,8 +131,7 @@ body {
 
 .hero_content {
   min-height: 707px;
-  background: #131313 url(../img/img-hero.jpg) center no-repeat/cover;
-  width: 95vw;
+  width: 94vw;
 }
 
 .hero_content-inner {
