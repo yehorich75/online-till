@@ -307,7 +307,28 @@ body {
 .control {
   text-align: center;
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
+}
+
+.control_inner {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
 }
 
 .control_title {
@@ -351,11 +372,6 @@ body {
 
 .control_video {
   margin-bottom: 98px;
-  position: absolute;
-  top: -50%;
-  left: 0;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
 }
 
 .control_line {
