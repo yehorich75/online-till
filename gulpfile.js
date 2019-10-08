@@ -1,5 +1,6 @@
 const 
     gulp = require('gulp'),
+    browserSync = require('browser-sync'),
     pug = require('gulp-pug'),
     rename = require("gulp-rename");
 
@@ -11,3 +12,7 @@ gulp.task('pug-compile', function buildHTML() {
         .pipe(rename('./index.html'))
         .pipe(gulp.dest('./'))
 });
+
+// gulp.task('watch', ['browserSync'], function() {
+//     gulp.watch('./pug/*.pug', browserSync.reload);
+// });

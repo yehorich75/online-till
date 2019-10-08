@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/yehorich75/online-till#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-pug": "^4.0.1",
     "gulp-rename": "^1.4.0"

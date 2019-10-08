@@ -204,7 +204,8 @@ body {
 
 .completed {
   margin-bottom: 90px;
-  height: 1074px;
+  height: 900px;
+  background-color: #000;
 }
 
 .completed .row {
@@ -307,28 +308,26 @@ body {
 .control {
   text-align: center;
   background-color: #fff;
+  position: relative;
+  height: 100vh;
+}
+
+.control_inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
-}
-
-.control_inner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
-  top: -50%;
-  left: 50%;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
+  top: 17%;
+  left: -60%;
+  -webkit-transform: translate(50%, -60%);
+          transform: translate(50%, -60%);
 }
 
 .control_inner-title {
@@ -338,7 +337,6 @@ body {
   text-transform: uppercase;
   display: inline-block;
   width: 100%;
-  text-align: center;
 }
 
 .control_inner-icon {
@@ -375,14 +373,16 @@ body {
 }
 
 .control_inner-line {
-  width: 50px;
-  height: 1px;
+  width: 53px;
+  height: 1.5px;
   background-color: #E3B873;
+  margin-bottom: 35px;
 }
 
 .control_inner-text {
   color: #363636;
   font-size: 1rem;
+  line-height: 2rem;
   font-weight: 300;
   margin-bottom: 90px;
 }
