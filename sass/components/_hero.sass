@@ -1,11 +1,9 @@
 .hero
     display: flex
     min-height: 707px
+    width: 100vw
     margin-bottom: 60px
     background: $color-dark url(../img/img-hero.jpg) center no-repeat / cover
-    .row
-        margin-right: 0
-        margin-left: 0
     &_insta
         display: flex
         flex-direction: column
@@ -13,7 +11,7 @@
         align-items: center
         height: 100vh
         min-height: 100vh
-        width: 5vw
+        width: 82px
         background-color: $color-dark
         &-link
             display: block
@@ -33,7 +31,8 @@
         min-height: 707px
         // height: 100vh
         // min-height: 100vh
-        width: 94vw
+        // width: 94vw
+        flex-grow: 1
         &-inner
             margin: 194px 0 0 60px
         &-title
