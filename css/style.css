@@ -331,7 +331,7 @@ body {
           transform: translate(50%, -50%);
 }
 
-.control_title {
+.control_inner-title {
   font-family: 'Yeseva One', cursive;
   font-size: 1.1rem;
   color: #ffffff;
@@ -341,7 +341,7 @@ body {
   text-align: center;
 }
 
-.control_title-icon {
+.control_inner-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,7 +354,7 @@ body {
   margin-bottom: 30px;
 }
 
-.control_title-icon:before {
+.control_inner-icon:before {
   content: "";
   display: block;
   background-color: #E3B873;
@@ -362,7 +362,7 @@ body {
   width: 50px;
 }
 
-.control_title-icon:after {
+.control_inner-icon:after {
   content: "";
   display: block;
   background-color: #E3B873;
@@ -370,17 +370,17 @@ body {
   width: 50px;
 }
 
-.control_video {
+.control_inner-video {
   margin-bottom: 98px;
 }
 
-.control_line {
+.control_inner-line {
   width: 50px;
   height: 1px;
   background-color: #E3B873;
 }
 
-.control_text {
+.control_inner-text {
   color: #363636;
   font-size: 1rem;
   font-weight: 300;
