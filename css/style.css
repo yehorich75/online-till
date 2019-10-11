@@ -82,7 +82,7 @@ body {
   min-height: 707px;
   width: 100vw;
   margin-bottom: 60px;
-  background: #131313 url(../img/img-hero.jpg) center no-repeat/cover;
+  background: #131313 url("../img/img-hero.jpg") center no-repeat/cover;
 }
 
 .hero_insta {
@@ -398,14 +398,19 @@ body {
 .control_form label {
   display: block;
   text-align: left;
+  font-size: .9rem;
+  margin: 0;
 }
 
 input[type=text],
 input[type=password] {
-  padding: 15px;
-  margin: 5px 0 22px 0;
   display: inline-block;
-  border: none;
-  background: #f1f1f1;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #c3c3c3;
+  color: #363636;
+  font-size: 1.2rem;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
